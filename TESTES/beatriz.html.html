@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BEATRIZ</title>
+
+        <style>
+            body{
+            background-color: rgb(97, 41, 69);
+            color: rgb(0, 0, 0)
+            }
+
+            .painel{
+                background-color: rgb(252, 252, 252);
+                border: 6px outset rgb(75, 0, 94);
+                width: 300px;
+                height: 500px;
+                margin: auto;
+                border-radius: 20px;
+                text-align: center;
+                /*padding-top: 10px;*/
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                /*margin-top: 40px;*/
+            }
+
+            #sim{
+                width: 60px;
+                height: 40px;
+                background-color: rgb(255, 11, 174);
+                border: 2px outset white;
+                border-radius: 10px;
+                color: white;
+                margin-left: -50px;
+            }
+
+            #nao{
+                position: absolute;
+                width: 60px;
+                height: 40px;
+                background-color: rgb(255, 11, 174);
+                border: 2px outset white;
+                border-radius: 10px;
+                color: white;
+                margin-left: 10px;
+            }
+
+            #img {
+                max-width:200px;
+                max-height:150px;
+                width: auto;
+                height: auto;
+                border: 3px outset rgb(255, 11, 174);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="painel">
+            <h3>VALE PRESENTE</h3>
+            <h5>PARABÉNS!!!! Você acaba de completar 10 meses sendo a melhor namorada do mundo.<h5>
+            <img id="img" src="https://i.pinimg.com/originals/5c/71/2c/5c712c9fc3f17b1735a36b8ec65996ba.gif" alt="">
+
+            <h5>Você aceita viver sua vida pra sempre comigo?</h5>
+
+            <a href="https://open.spotify.com/intl-pt/track/04h9o3gtRD7fvGafF7ukJj"><button id="sim"> SIM! :)</button></a>
+            <button onmouseover="fuja()" id="nao"> Não :(</button>
+            </br>
+        </div>
+
+        <script>
+            function fuja(){
+                var BotaoNão = document.getElementById("nao");
+
+                var LarguraJanela = window.innerWidth;
+                var AlturaJanela = window.innerHeight;
+
+                var maxX = LarguraJanela - BotaoNão.offsetWidth;
+                var maxY = AlturaJanela - BotaoNão.offsetHeight;
+
+                var aleatorioX = Math.floor(Math.random() * maxX);
+                var aleatorioY = Math.floor(Math.random() * maxY);
+
+                BotaoNão.style.left = aleatorioX + "px";
+                BotaoNão.style.top = aleatorioY + "px";
+            }
+        </script>
+    </body>
+
+</html>

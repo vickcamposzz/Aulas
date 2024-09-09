@@ -1,0 +1,73 @@
+
+body{
+    background-image: url(../img/fundo.jpg.jpg) ;
+
+
+    h1{
+        color: rgb(0, 0, 0);
+        text-align: start;
+        font-family: "Rubik Mono One", monospace;
+        font-size: 50px;
+    
+    }
+
+h2{
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+}
+p {
+    color:rgb(0, 0, 0);
+    text-align: end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  
+ }
+ 
+ header {
+    
+    color: #000000;
+    padding: 10px 0;
+    text-align: start;
+}
+
+.footer {
+    
+    color: #000000;
+    text-align: end;
+    padding: 200px;
+    font-size: 20px;
+}
+
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    width: 1000px;           
+    height: 300px;           
+    padding: 30px;           
+    border-radius: 30px;    
+    background-color: #ffffff; 
+}
+
+  img {
+    width: 50%;
+    margin: 10px 15px;
+    border-radius: 30;
+  }
+  .texto {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+  
+}
